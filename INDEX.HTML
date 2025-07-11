@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RuPaul's Drag Race Simulator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+    <h1>RuPaul's Drag Race Simulator</h1>
+
+    <div id="main">
+        <p>¿Cuántas queens querés en la temporada?</p>
+        <input type="number" id="castSize" min="3" max="20" />
+        <button onclick="generateSpace()">Seleccionar</button>
+
+        <div id="castSelection"></div>
+
+        <p>Formato de premiere:</p>
+        <select id="premiere-format">
+            <option value="normal">Normal</option>
+            <option value="s6">Double Premiere (S6)</option>
+            <option value="s12">Double Premiere (S12)</option>
+            <option value="porkchop">Porkchop</option>
+        </select>
+
+        <p>Formato de retorno:</p>
+        <select id="returning">
+            <option value="none">Ninguno</option>
+            <option value="random">Random</option>
+            <option value="votes">Voto de queens</option>
+            <option value="smackdown">Smackdown</option>
+        </select>
+
+        <p>Formato de final:</p>
+        <select id="format">
+            <option value="top3">Top 3</option>
+            <option value="top4">Top 4 (LSFTC)</option>
+            <option value="team">Equipos</option>
+            <option value="allstars">All Stars</option>
+            <option value="assassin">Assassin</option>
+        </select>
+
+        <br><br>
+        <input type="checkbox" id="disableDouble" /> Desactivar double shantay / sashay
+
+        <p><button onclick="startSimulation()">¡Simular ahora!</button></p>
+
+        <hr>
+
+        <p><a href="custom.html">Crear queens personalizadas</a></p>
+        <p><a href="predefined.html">Elegir cast predefinido</a></p>
+    </div>
+
+    <div id="simulator"></div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>
