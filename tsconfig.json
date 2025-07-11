@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",                      // Usa sintaxis moderna
+    "module": "none",                     // No usa módulos, todo es global
+    "outFile": "./javascript/index.js",  // Archivo JS generado (único archivo)
+    "strict": true,                       // Habilita chequeos estrictos
+    "esModuleInterop": true,             // Compatibilidad entre ESModules y CommonJS
+    "skipLibCheck": true,                // No analiza librerías externas
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false
+  }
+}
